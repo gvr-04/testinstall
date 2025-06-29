@@ -50,7 +50,7 @@ alias sb="source ~/.bashrc"
 alias n="nvim"
 alias lg="lazygit"
 alias f="python3 ~/repo/ranger/ranger.py"
-alias sd="$fpath/scripts/control.sh sd"
+alias sd="~/final/scripts/control.sh sd"
 eval "$(starship init bash)"
 EOL
 echo -e "\n\n\ndone bash\n\n\n"
