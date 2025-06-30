@@ -15,7 +15,7 @@ initializing(){
 hyprland(){
 	mkdir ~/Pictures
 	mkdir ~/Pictures/screenshots
-	ln -s ~/$fpath/wallp ~/Pictures/wallp
+	ln -s ~/$fpath/wallp/ ~/Pictures/wallp
 	echo "source = $fpath/mytheme.conf" >> ~/.config/hypr/hyprland.conf
 	echo -e "\n\n\ndone hyprland\n\n\n"
 	sleep 3
