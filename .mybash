@@ -1,0 +1,10 @@
+
+clear
+export EDITOR="nvim"
+alias sb="source ~/.bashrc"
+alias n="nvim"
+alias lg="lazygit"
+alias f="python3 ~/repo/ranger/ranger.py"
+alias sd="~/final/scripts/control.sh sd"
+eval "$(starship init bash)"
+
