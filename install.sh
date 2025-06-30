@@ -7,11 +7,7 @@ initializing(){
 	sleep 3
 	# install dependencies
 	$fpath/scripts/check.sh
-	if [ ! -d "~/repo" ]; then
-		mkdir -p "~/repo"
-	else
-		echo "Directory already exists: ~/repo"
-	fi
+	mkdir ~/repo
 	echo -e "\n\n\n\ndone initializing\n\n\n"
 	sleep 3
 }
@@ -19,17 +15,13 @@ initializing(){
 hyprland(){
 	mkdir ~/Pictures
 	mkdir ~/Pictures/screenshots
-	mkdir ~/Pictures/wallp
+	ln -s ~/$fpath/wallp ~/Pictures/wallp
 	echo "source = $fpath/mytheme.conf" >> ~/.config/hypr/hyprland.conf
 	echo -e "\n\n\ndone hyprland\n\n\n"
 	sleep 3
 }
 kitty(){
-	if [ ! -d "~/.config/kitty" ]; then
-		mkdir -p "~/.config/kitty"
-	else
-		echo "Directory already exists: ~/.config/kitty"
-	fi
+	mkdir ~/.config/kitty
 	echo "include $fpath/mykitty.conf" >> ~/.config/kitty/kitty.conf
 	echo -e "\n\n\ndone kitty\n\n\n"
 	sleep 3
