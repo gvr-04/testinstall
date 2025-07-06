@@ -132,6 +132,8 @@ return {
 		"nvim-neorg/neorg",
 		lazy = false,
 		version = "*",
+		opts = {
+		},
 		config = function()
 			require("neorg").setup {
 				load = {
@@ -141,7 +143,6 @@ return {
 						config = {
 							workspaces = {
 								note = "~/notes",
-								test = "~/test",
 							},
 							default_workspace = "note",
 						},
