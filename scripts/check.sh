@@ -23,9 +23,10 @@ packages=(
 	ttf-jetbrains-mono-nerd
 	ttf-dejavu
 	# optional
-	# waybar
 	less
+	# waybar
 	# udisks2
+	# piper # logitech mouse application
 
 )
 packages1=(
