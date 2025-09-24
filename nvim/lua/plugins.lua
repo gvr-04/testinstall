@@ -37,7 +37,7 @@ return {
 		opts = {
 			theme = { variant = 'fall', accent = 'blue' },
 			editor = {
-				transparent_background = false,
+				transparent_background = true,
 				sign = { color = 'none' },
 				float = { color = 'mantle', invert_border = false },
 				completion = { color = 'surface0' },
